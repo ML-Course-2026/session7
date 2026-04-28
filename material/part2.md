@@ -149,7 +149,7 @@ from scipy.signal import convolve2d
 try:
     # Example image URL (Wikimedia Commons - Bicycle) - Check license if using elsewhere!
     #image_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Left_side_of_Flying_Pigeon.jpg/640px-Left_side_of_Flying_Pigeon.jpg" # Option 1
-    image_url = "https://raw.githubusercontent.com/ML-Course-2025/session6/refs/heads/main/material/img/640px-Left_side_of_Flying_Pigeon.jpg" # Option 2
+    image_url = "https://raw.githubusercontent.com/ML-Course-2026/session7/refs/heads/main/material/img/640px-Left_side_of_Flying_Pigeon.jpg" # Option 2
 
     response = requests.get(image_url)
     response.raise_for_status() # Raise an exception for bad status codes
@@ -984,7 +984,7 @@ These architectures represent significant milestones and demonstrate how the fun
 
 ***
 
-## Conclusion (formerly Summary)
+## Conclusion
 
 Convolutional Neural Networks provide a powerful framework for image recognition. By sequentially applying layers for **Convolution** (feature detection), **Pooling** (downsampling), **Flattening** (vectorization), and **Full Connection** (classification), CNNs automatically learn hierarchical visual features directly from data. Understanding these building blocks is key to using and designing CNNs effectively.
 
