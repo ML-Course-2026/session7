@@ -4,8 +4,15 @@
 
 This lab demonstrates the capabilities and limitations of a standard Artificial Neural Network (ANN) for image classification. We will:
 
-1.  Briefly revisit the ANN's strong performance on the simple MNIST dataset.
-2.  Apply the **same** ANN architecture to the more complex CIFAR-10 dataset.
+1. Briefly revisit the ANN's strong performance on the simple [**MNIST** dataset](https://en.wikipedia.org/wiki/MNIST_database).  
+   - **MNIST (Modified National Institute of Standards and Technology dataset)** is a collection of 70,000 grayscale images of handwritten digits (0–9).
+   - Each image is 28×28 pixels, centered and size-normalized, making it a relatively simple benchmark for image classification tasks.
+   - It is widely used as a "hello world" dataset in machine learning.
+
+2. Apply the **same** ANN architecture to the more complex [**CIFAR-10** dataset](https://www.cs.toronto.edu/~kriz/cifar.html).  
+   - **CIFAR-10 (Canadian Institute For Advanced Research dataset)** consists of 60,000 color images divided into 10 classes (e.g., airplane, car, bird, cat, etc.).
+   - Each image is 32×32 pixels with 3 color channels (RGB), making it significantly more complex than MNIST.
+   - The dataset includes more variation in object appearance, background, and lighting, which makes classification more challenging.
 3.  Observe and compare the performance difference.
 4.  Understand *why* ANNs struggle with complex image data, motivating the need for Convolutional Neural Networks (CNNs) which will be covered in Part 2.
 

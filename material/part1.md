@@ -1,7 +1,7 @@
 # Part 1: Deep Learning Fundamentals & Image Classification with ANNs
 
 > [!NOTE]  
-> Building upon concepts potentially explored last week with regression tasks, this week our focus shifts specifically to classification problems using Artificial Neural Networks. We will apply fundamental deep learning principles – many of which are common to both regression and classification, to the task of image recognition using the MNIST dataset. This practical application will highlight the capabilities and limitations of basic ANNs for image data, thereby motivating the need for Convolutional Neural Networks (CNNs), which will be covered in Part 2. While some core concepts like layers, activation functions, and the Keras workflow might seem familiar, their application here is geared towards classification and understanding the challenges specific to image data.
+> Building upon concepts potentially explored in week 5 with regression tasks, this week our focus shifts specifically to classification problems using Artificial Neural Networks. We will apply fundamental deep learning principles – many of which are common to both regression and classification, to the task of image recognition using the MNIST dataset. This practical application will highlight the capabilities and limitations of basic ANNs for image data, thereby motivating the need for Convolutional Neural Networks (CNNs), which will be covered in Part 2. While some core concepts like layers, activation functions, and the Keras workflow might seem familiar, their application here is geared towards classification and understanding the challenges specific to image data.
 
 <!-- This document introduces fundamental Deep Learning (DL) concepts. Deep Learning uses Artificial Neural Networks (ANNs) – computational models inspired by the structure of the brain – with multiple layers to learn patterns directly from data. This approach has proven effective for tasks like image recognition and natural language processing, partly because DL models can automatically learn **hierarchical data representations**. This means they learn simple features first, then combine them to understand more complex patterns, much like how humans recognize objects. -->
 
@@ -31,7 +31,7 @@ Several software libraries facilitate the development of deep learning models. T
 
 *   **TensorFlow & Keras:**
     *   **TensorFlow:** Developed by Google, TensorFlow is a powerful open-source library for numerical computation and large-scale machine learning. It provides low-level **APIs** (Application Programming Interfaces - sets of rules and tools for building software) for fine-grained control but can be complex for beginners.
-    *   **Keras:** Keras is a high-level API for building and training neural networks. It emphasizes user-friendliness, modularity, and rapid experimentation. Keras can run on top of different **backends** (underlying computational engines like TensorFlow), including TensorFlow (most common), Theano, or CNTK. We will use the `tensorflow.keras` implementation, which integrates Keras directly within TensorFlow. Its ease of use makes it suitable for beginners and practitioners.
+    *   **Keras:** Keras is a high-level API for building and training neural networks. It emphasizes user-friendliness, modularity, and rapid experimentation. Keras can run on top of different **backends** (underlying computational engines like TensorFlow), including TensorFlow (most common) or PyTorch. We will use the `tensorflow.keras` implementation, which integrates Keras directly within TensorFlow. Its ease of use makes it suitable for beginners and practitioners.
 
 *   **PyTorch/[Fastai](https://docs.fast.ai/):**
     *   Developed by Facebook's AI Research lab (FAIR), PyTorch is another major open-source library. It is widely adopted, especially in the research community, and is known for its Pythonic feel, flexibility, and **dynamic computation graphs** (meaning the network's structure can potentially be altered during execution, offering flexibility for complex scenarios, although less common in introductory models).
@@ -190,7 +190,9 @@ Preparing data correctly is crucial for model performance.
 
 *   **Normalization:** Pixel values (0-255) are scaled to the range [0, 1]. This helps the training process converge more stably and quickly, as neural networks often work best with small input values. Dividing by 255.0 achieves this.
 *   **Flattening:** Standard ANNs (using `Dense` layers) expect input as a 1D vector. Although the images are 2D (28x28), we need to reshape them into a 1D array of 784 pixels (28 * 28 = 784). This reshaping will be performed by the first layer in our Keras model (`Flatten` layer).
+
 <img src="./img/flattening.gif" width="50%">
+
 *   **Labels:** The labels (`y_train`, `y_test`) are already integers (0-9), which is the format required by the chosen loss function (`sparse_categorical_crossentropy`).
 
 ```python
