@@ -106,7 +106,7 @@ Activation functions introduce **non-linearity** into the network. This is cruci
     *   *Function:* `f(x) = max(0, x)` (Outputs the input if positive, zero otherwise).
     *   *Use Case:* The most common choice for **hidden layers**. It is computationally efficient and helps mitigate the **vanishing gradient problem** (a situation in deep networks where the signals used to update the weights in early layers become extremely small, effectively stopping learning).
     *   *Output Range:* \[0, ∞)
-    * <img src="./img/relu.png" width="50%">
+    * <img src="../img/relu.png" width="50%">
 *   **Linear (or 'None'):**
     *   *Function:* `f(x) = x` (Outputs the input directly).
     *   *Use Case:* Typically used in the **output layer for regression tasks**, where the prediction can be any continuous value.
@@ -115,7 +115,7 @@ Activation functions introduce **non-linearity** into the network. This is cruci
     *   *Function:* `f(x) = 1 / (1 + exp(-x))` (S-shaped curve).
     *   *Use Case:* Primarily used in the **output layer for binary classification tasks**. Outputs a probability between 0 and 1. Less common in hidden layers now due to potential for vanishing gradients.
     *   *Output Range:* (0, 1)
-    * <img src="./img/sigmoid.png" width="50%">
+    * <img src="../img/sigmoid.png" width="50%">
 *   **Softmax:**
     *   *Function:* Converts a vector of raw scores (logits) into a probability distribution (all output values are between 0 and 1 and sum to 1).
     *   *Use Case:* Used in the **output layer for multi-class classification tasks**. Each neuron's output represents the calculated probability for a specific class.
@@ -124,7 +124,7 @@ Activation functions introduce **non-linearity** into the network. This is cruci
     *   *Function:* `f(x) = tanh(x)` (Similar S-shape to sigmoid, but output centered around zero).
     *   *Use Case:* Sometimes used in hidden layers, especially in recurrent networks.
     *   *Output Range:* (-1, 1)
-    * <img src="./img/tanh.png" width="50%">
+    * <img src="../img/tanh.png" width="50%">
 
 
 **2.6 Parameters vs. Hyperparameters**
@@ -180,7 +180,7 @@ np.random.seed(42); tf.random.set_seed(42)
 ```
 
 
-<img src="./img/p1i1.png" alt="" width="50%">
+<img src="../img/p1i1.png" alt="" width="50%">
 
 
 **3.2 Data Preparation**
@@ -190,7 +190,7 @@ Preparing data correctly is crucial for model performance.
 *   **Normalization:** Pixel values (0-255) are scaled to the range [0, 1]. This helps the training process converge more stably and quickly, as neural networks often work best with small input values. Dividing by 255.0 achieves this.
 *   **Flattening:** Standard ANNs (using `Dense` layers) expect input as a 1D vector. Although the images are 2D (28x28), we need to reshape them into a 1D array of 784 pixels (28 * 28 = 784). This reshaping will be performed by the first layer in our Keras model (`Flatten` layer).
 
-<img src="./img/flattening.gif" width="50%">
+<img src="../img/flattening.gif" width="50%">
 
 *   **Labels:** The labels (`y_train`, `y_test`) are already integers (0-9), which is the format required by the chosen loss function (`sparse_categorical_crossentropy`).
 
@@ -307,10 +307,10 @@ plt.xlabel('Epoch'); plt.ylabel('Accuracy'); plt.legend(); plt.grid(True)
 plt.tight_layout(); plt.show()
 ```
 
-<img src="./img/learning-curves.png" width="50%">
+<img src="../img/learning-curves.png" width="50%">
 
 
-<img src="./img/p1i2.png" alt="" width="50%">
+<img src="../img/p1i2.png" alt="" width="50%">
 
 
 **4.2 Understanding Overfitting vs. Underfitting**
@@ -333,13 +333,13 @@ Analyzing the learning curves helps identify common training problems:
     *   *Definition:* The model learns the underlying patterns well and generalizes successfully to unseen data.
     *   *Symptoms on Plots:* Both training and validation loss decrease and converge to low values. Both accuracies increase and converge to high values. The gap between training and validation curves is minimal.
 
-<img src="./img/Underfitting-overfitting.png" width="50%">
+<img src="../img/Underfitting-overfitting.png" width="50%">
 
 **4.3 Regularization Technique: Early Stopping**
 
 **Regularization** refers to techniques used to prevent overfitting and improve a model's ability to generalize to new data. Early Stopping is a common and effective regularization method.
 
-<img src="./img/Early-Stopping.png" width="50%">
+<img src="../img/Early-Stopping.png" width="50%">
 
 *   **Concept:** Monitor a chosen performance metric on the validation set during training (typically `val_loss`). If this metric stops improving (or starts worsening) for a specified number of consecutive epochs (the `patience` parameter), the training process is halted prematurely. The idea is to stop training around the point where the model starts to overfit. Optionally (`restore_best_weights=True`), the model's parameters can be reverted to the values they had at the epoch with the best observed validation metric.
 

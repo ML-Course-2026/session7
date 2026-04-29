@@ -19,13 +19,13 @@ Before a CNN can process an image, the image must be converted into a numerical 
 *   **Grayscale Images:** For a black and white (grayscale) image, each pixel has a single value, typically ranging from 0 (black) to 255 (white). An image with height `m` and width `n` is represented as a 2-dimensional array (or matrix) of size `m x n`.
 *   **Color Images:** Most color images use the RGB (Red, Green, Blue) model. Each pixel is represented by *three* values, one for the intensity of red, one for green, and one for blue (each usually 0-255). A color image of size `m x n` is represented as a 3-dimensional array of size `m x n x 3` (height x width x channels).
 
-<!-- ![Image channel description](./img/image-channel.png) -->
-<img src="./img/image-channel.png" width="50%">
+<!-- ![Image channel description](../img/image-channel.png) -->
+<img src="../img/image-channel.png" width="50%">
 
 The image is represented as a 3-dimensional array, with each channel representing red, green, and blue values, respectively, as shown in the following image featuring an apple.
 
-<!-- ![apple channel](./img/apple-channel.jpg) -->
-<img src="./img/apple-channel.jpg" width="50%">
+<!-- ![apple channel](../img/apple-channel.jpg) -->
+<img src="../img/apple-channel.jpg" width="50%">
 
 ***
 **Code Example: Image Channels (RGB)**
@@ -66,13 +66,13 @@ print("\nGreen Channel Values:\n", green_channel)
 print("\nBlue Channel Values:\n", blue_channel)
 ```
 
-<img src="./img/p2i1.png" alt="" width="50%">
+<img src="../img/p2i1.png" alt="" width="50%">
 
 **Visualizing RGB Channels with an Online Tool**
 
 To get a better visual intuition of how an image is split into its Red, Green, and Blue components, you can use online tools. These tools often display each channel as a separate grayscale image, where brighter areas indicate higher intensity of that specific color in the original image. This can help solidify the concept of channels representing different color information.
 
-For example, you can upload [an image](./img/apple.jpg) to a site like [Online Image Color Channel Separator](https://onlinetools.com/image/separate-image-color-channels) to see this separation visually.
+For example, you can upload [an image](../img/apple.jpg) to a site like [Online Image Color Channel Separator](https://onlinetools.com/image/separate-image-color-channels) to see this separation visually.
 
 
 ***
@@ -84,7 +84,7 @@ For example, you can upload [an image](./img/apple.jpg) to a site like [Online I
 
 Before diving into the mechanics of CNNs, it's helpful to understand their inspiration: the human visual system. Our brains don't process an entire scene instantly. Instead, visual information travels through different areas of the brain, particularly the visual cortex located in the occipital lobe, processing features in a hierarchical manner.
 
-<img src="./img/v1.png" alt="Abstract illustration of visual areas in the human brain, showing Primary visual cortex (V1), V2, V3, and higher areas like Posterior parietal cortex and Inferior temporal cortex." width="50%">
+<img src="../img/v1.png" alt="Abstract illustration of visual areas in the human brain, showing Primary visual cortex (V1), V2, V3, and higher areas like Posterior parietal cortex and Inferior temporal cortex." width="50%">
 
 > Image source: [Perkins School for the Blind, Adapted from Banich and Compton (2018)](https://www.perkins.org/higher-order-visual-pathways-and-the-cvi-brain/)
 
@@ -94,7 +94,7 @@ As shown in the illustration above:
 2.  This output is passed to subsequent areas like **V2** and **V3**. Neurons in these areas combine the simple features detected in V1 to recognize more complex shapes, corners, and textures.
 3.  Further processing in higher-level areas (like the Inferior Temporal Cortex, not fully detailed here) combines these shapes to recognize complex objects (like faces, chairs, or the apple from our earlier example).
 
-<img src="./img/2b2.png" alt="" width="50%">
+<img src="../img/2b2.png" alt="" width="50%">
 
 
 **The Connection to CNNs:**
@@ -118,12 +118,12 @@ Think of convolution like sliding a small specialized magnifying glass over the 
 
 To extract features, we use a filter (kernel). The filter slides across the input image's numerical array. At each position, the filter's values are multiplied element-wise with the underlying patch of the image, and the results are summed up to produce a single value in the feature map.
 
-<img src="./img/2b1.jpg" alt="" width="50%">
+<img src="../img/2b1.jpg" alt="" width="50%">
 
 For simplicity, the following animation shows how an edge detector filter might be applied to just one channel (e.g., the blue channel) of an image. The resulting feature map highlights the edges found.
 
-<!-- ![Animation showing how an edge detector filter is applied to the blue channel output.](./img/convolution.gif) -->
-<img src="./img/convolution.gif" width="50%">
+<!-- ![Animation showing how an edge detector filter is applied to the blue channel output.](../img/convolution.gif) -->
+<img src="../img/convolution.gif" width="50%">
 
 The filter used in the animation is size `3x3` applied to an input of size `5x5`. The resulting feature map is size `3x3`. In summary, for an input image of size `n x n` and a filter of size `m x m` (with stride 1, no padding), the resulting output is of size `(n - m + 1) x (n - m + 1)`.
 
@@ -264,7 +264,7 @@ else:
     plt.show()
 ```
 
-<img src="./img/p2i2.png" alt="" width="50%">
+<img src="../img/p2i2.png" alt="" width="50%">
 
 </details>
 
@@ -302,7 +302,7 @@ plt.tight_layout(); plt.show()
 
 **Other Examples:**
 
-<img src="./img/2c.jpg" alt="" width="50%">
+<img src="../img/2c.jpg" alt="" width="50%">
 
 ***
 
@@ -314,8 +314,8 @@ plt.tight_layout(); plt.show()
 
 The following animation shows the same convolution as before, but with a stride of 2 steps.
 
-<!-- ![Stride](./img/stride2.gif) -->
-<img src="./img/stride2.gif" width="50%">
+<!-- ![Stride](../img/stride2.gif) -->
+<img src="../img/stride2.gif" width="50%">
 
 The `3x3` filter applied to the `5x5` input with `stride=2` results in a `2x2` feature map. In summary, for an input `n x n`, filter `m x m`, and stride `k`, the output size is `floor((n - m) / k + 1) x floor((n - m) / k + 1)`.
 
@@ -377,7 +377,7 @@ else:
     plt.show()
 ```
 
-<img src="./img/p2i3.png" alt="" width="50%">
+<img src="../img/p2i3.png" alt="" width="50%">
 
 <!-- 
 ```python
@@ -425,8 +425,8 @@ plt.tight_layout(); plt.show()
 
 The following animation shows how 1 layer of zero-padding is added to the input array before the filter is applied.
 
-<!-- ![Padding](./img/padding.gif) -->
-<img src="./img/padding.gif" width="50%">
+<!-- ![Padding](../img/padding.gif) -->
+<img src="../img/padding.gif" width="50%">
 
 With one layer of padding (`p=1`), the `5x5` input becomes `7x7`. Applying a `3x3` filter (`m=3`) with `stride=1` then results in a `5x5` output, preserving the original spatial dimensions. In general, for input `n x n`, filter `m x m`, padding `p`, and stride `k=1`, the output size is `(n + 2p - m + 1) x (n + 2p - m + 1)`.
 
@@ -482,7 +482,7 @@ else:
 ```
 
 
-<img src="./img/p2i4.png" alt="" width="50%">
+<img src="../img/p2i4.png" alt="" width="50%">
 
 
 <!-- 
@@ -524,8 +524,8 @@ plt.tight_layout(); plt.show()
 
 The 3D filter slides over the 3D input patch. The element-wise multiplication and summation happens across *all three channels simultaneously*. The crucial point is that all these results (from R, G, and B interactions with their respective filter channels) are summed up into a *single* number for that position in the output feature map. Therefore, even with a 3-channel input and a 3-channel filter, the resulting feature map is still **2-dimensional**.
 
-<!-- ![RGB convolutions](./img/RGB_Convolutions.png) -->
-<img src="./img/RGB_Convolutions.png" width="50%">
+<!-- ![RGB convolutions](../img/RGB_Convolutions.png) -->
+<img src="../img/RGB_Convolutions.png" width="50%">
 
 For a `5x5` image represented over 3 channels (`5x5x3` array), a `3x3` filter (represented as a `3x3x3` array) produces a single `4x4` feature map (assuming stride=1, no padding: `(5-3+1) = 3+1 = 4`).
 
@@ -592,7 +592,7 @@ else:
 ```
 
 
-<img src="./img/p2i5.png" alt="" width="50%">
+<img src="../img/p2i5.png" alt="" width="50%">
 
 
 <!-- 
@@ -645,8 +645,8 @@ plt.tight_layout(); plt.show()
 
 **Process:** If a convolutional layer has `F` filters, each filter (size `m x m x C`) is applied independently to the input (`n x n x C`). This generates `F` separate 2D feature maps. These maps are then stacked together along the depth dimension, creating a final output volume of size `(n-m+1) x (n-m+1) x F` (assuming stride=1, no padding).
 
-<!-- ![Filters](./img/Filters_Convolutions.png) -->
-<img src="./img/Filters_Convolutions.png" width="50%">
+<!-- ![Filters](../img/Filters_Convolutions.png) -->
+<img src="../img/Filters_Convolutions.png" width="50%">
 
 The image shows applying three different filters to the RGB input. Each filter produces its own 2D feature map (size `4x4` in the example). Stacking these results produces a `4x4x3` output volume.
 
@@ -719,7 +719,7 @@ else:
 ```
 
 
-<img src="./img/p2i6.png" alt="" width="50%">
+<img src="../img/p2i6.png" alt="" width="50%">
 
 
 <!-- 
@@ -774,13 +774,13 @@ plt.tight_layout(); plt.show()
 *   **Average Pooling:** Takes the average value within the window.
 *   **Max Pooling:** Takes the maximum value within the window (most common).
 
-<img src="./img/3b.jpg" alt="" width="50%">
+<img src="../img/3b.jpg" alt="" width="50%">
 
 
 The following animation shows Max Pooling with a 2x2 window and stride 2 (implied by non-overlapping movement). For every 2x2 group of cells, the maximum value is selected for the output. (Note: *the animation is not quite accurate*)
 
-<!-- ![pooling](./img/pooling.gif) -->
-<img src="./img/pooling.gif" width="50%">
+<!-- ![pooling](../img/pooling.gif) -->
+<img src="../img/pooling.gif" width="50%">
 
 Note that pooling is applied independently to each feature map generated by the preceding convolutional layer.
 
@@ -825,7 +825,7 @@ plot_matrix_pooling(axs[1], pooled_map, f'Max Pooled ({output_h}x{output_w})')
 plt.tight_layout(); plt.show()
 ```
 
-<img src="./img/p2i7.png" alt="" width="50%">
+<img src="../img/p2i7.png" alt="" width="50%">
 
 ***
 
@@ -835,8 +835,8 @@ plt.tight_layout(); plt.show()
 
 **Process:** Flattening simply takes all the elements in the multi-dimensional array and arranges them sequentially into one long vector.
 
-<!-- ![Flattening](./img/flattening.gif) -->
-<img src="./img/flattening.gif" width="50%">
+<!-- ![Flattening](../img/flattening.gif) -->
+<img src="../img/flattening.gif" width="50%">
 
 The animation shows the transformation of the pooled feature maps (a 3D volume) into a single column (a 1D vector). Note that in practice, flattening is applied to the entire volume of feature maps resulting from the last conv/pool layer.
 
@@ -875,7 +875,7 @@ plt.tight_layout(); plt.show()
 ```
 
 
-<img src="./img/p2i8.png" alt="" width="50%">
+<img src="../img/p2i8.png" alt="" width="50%">
 
 
 
@@ -889,8 +889,8 @@ plt.tight_layout(); plt.show()
 
 A typical CNN architecture repeats Convolution and Pooling steps (Conv -> Pool -> Conv -> Pool -> ...) before Flattening and passing to the Fully Connected layers. The exact number of layers and their parameters depend on the specific task.
 
-<!-- ![CNN FC](./img/CNN-Full-connection.png) -->
-<img src="./img/CNN-Full-connection.png" width="50%">
+<!-- ![CNN FC](../img/CNN-Full-connection.png) -->
+<img src="../img/CNN-Full-connection.png" width="50%">
 
 The image above illustrates the end-to-end flow: an input image goes through Convolution and Pooling layers (possibly multiple times), the result is Flattened into a vector, and this vector feeds into Fully Connected (Dense) layers for final classification (e.g., predicting "apple").
 
@@ -932,7 +932,7 @@ print(f"\nFinal flattened vector (ready for Dense layers): {flattened_simple}")
 
 
 
-<img src="./img/p2i9.png" alt="" width="50%">
+<img src="../img/p2i9.png" alt="" width="50%">
 
 
 ***
@@ -941,7 +941,7 @@ print(f"\nFinal flattened vector (ready for Dense layers): {flattened_simple}")
 
 The individual steps (Convolution, Pooling, Flattening, Full Connection) are combined to form a complete CNN. The following diagram illustrates a typical architecture:
 
-<img src="./img/cnn-architecture.jpg" alt="Diagram showing input image -> Conv -> Pool -> Conv -> Pool -> Flatten -> Dense -> Dense -> Output" width=auto>
+<img src="../img/cnn-architecture.jpg" alt="Diagram showing input image -> Conv -> Pool -> Conv -> Pool -> Flatten -> Dense -> Dense -> Output" width=auto>
 
 This structure often involves stacking convolutional and pooling layers to progressively extract more complex features before flattening and passing the information to dense layers for classification.
 
@@ -1024,7 +1024,7 @@ These architectures represent significant milestones and demonstrate how the fun
 
 Convolutional Neural Networks provide a powerful framework for image recognition. By sequentially applying layers for **Convolution** (feature detection), **Pooling** (downsampling), **Flattening** (vectorization), and **Full Connection** (classification), CNNs automatically learn hierarchical visual features directly from data. Understanding these building blocks is key to using and designing CNNs effectively.
 
-<img src="./img/Convolution-Max-Pooling-Flatten.jpg" alt="" width="50%">
+<img src="../img/Convolution-Max-Pooling-Flatten.jpg" alt="" width="50%">
 
 **Final Note:**
 
