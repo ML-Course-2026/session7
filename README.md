@@ -26,7 +26,7 @@
 
 #### Part 0: Review
 
-- Where are we now? Block diagram
+- [Where are we now?](./material/part0.md) 
 - Group presentations: TinyML (Gr 4), Edge Impulse (Gr 2), SensiML (Gr 9)
 
 ---
