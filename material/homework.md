@@ -16,7 +16,6 @@ Please **create a separate directory** in your group’s **Google Drive folder**
 * Clearly describe the project.
 * Here is a [minimum template for the presentation](./template.md) to help you structure your slides and discussion.
 * Be sure to include:
-
   * The contributions of each team member.
   * The challenges faced during the project.
   * What you learned during the mini-project.
@@ -34,13 +33,10 @@ Write a short reflective report addressing the following four points:
 
 * **Loved:** What went well during the project?
   (What you appreciated or enjoyed.)
-
 * **Loathed:** What did not go well?
   (Gaps, difficulties, or aspects that could be improved.)
-
 * **Longed for:** What did you wish you had during the project?
   (Resources, tools, time, etc.)
-
 * **Learned:** What new knowledge or skills did you gain?
   (Technical, teamwork, communication, etc.)
 
