@@ -127,11 +127,6 @@ Activation functions introduce **non-linearity** into the network. This is cruci
     * <img src="./img/tanh.png" width="50%">
 
 
-
-
-
-
-
 **2.6 Parameters vs. Hyperparameters**
 
 Understanding this distinction is fundamental to working with neural networks:
@@ -158,7 +153,7 @@ This section applies the concepts to classify MNIST handwritten digits using Ker
 
 **3.1 The MNIST Dataset**
 
-MNIST is a standard dataset containing 70,000 grayscale images (28x28 pixels) of digits 0-9. It includes 60,000 images for training and 10,000 for testing. The task is to train a model to correctly identify the digit depicted in an image.
+[MNIST](https://en.wikipedia.org/wiki/MNIST_database) is a standard dataset containing 70,000 grayscale images (28x28 pixels) of digits 0-9. It includes 60,000 images for training and 10,000 for testing. The task is to train a model to correctly identify the digit depicted in an image.
 
 ```python
 # Code for Loading and viewing MNIST data

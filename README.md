@@ -1,7 +1,7 @@
 # Session 7: Convolutional Neural Networks (CNNs)
 
 > [!IMPORTANT]  
-> - [Homework](./material/homework.md)
+> - [Homework (Mini-Project)](./material/homework.md)
 > - **Course Feedback** *4.5.2026 - 8.5.2026*
 > - The [Peer Assessment](./material/peer-assessment-template.md):  is an individual submission and must be uploaded to OMA in Week 8.
 
@@ -47,15 +47,17 @@
 - Convolutional Neural Networks (CNNs)
 - Image Classification with CNNs
 - [Summary: Key Points and Takeaways](./material/part2.md)
-- [Activity 2](./material/activity2-long-version.md)
-- [Activity 2 (Short Version)](./material/activity2.md)
+- [Activity 2](./material/activity2.md)
+- [Activity 2 (Short Version)](./material/activity2-short-version.md)
 
 ----
 <details>
 <summary>Links used in the Lecture</summary>
 
--  https://excalidraw.com/
-- [Visualization Tool](https://playground.tensorflow.org)  
+- https://excalidraw.com/
+- [Visualization Tool](https://playground.tensorflow.org) 
+- https://www.cs.toronto.edu/~kriz/cifar.html
+- https://www.cs.toronto.edu/~kriz/cifar.html 
 - [Inspiration from the Brain: Hierarchical Vision](https://www.perkins.org/higher-order-visual-pathways-and-the-cvi-brain/)
 - [Introduction to convolutional neural networks](https://developer.ibm.com/articles/introduction-to-convolutional-neural-networks/?mhsrc=ibmsearch_a&mhq=convolutional%20neural%20networks%26quest%3B)
 - [How do convolutional neural networks work?](https://www.ibm.com/topics/convolutional-neural-networks)
