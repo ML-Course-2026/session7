@@ -3,7 +3,7 @@
 > [!IMPORTANT]  
 > - [Homework (Mini-Project)](./material/homework.md)
 > - **Course Feedback** *4.5.2026 - 8.5.2026*
-> - The Peer Assessment is an individual submission and must be uploaded to OMA by Wednesday 6/5. It is available in either [Markdown](./material/peer-assessment-template.md) or [DOCX](./material/peer-assessment-template.docx) format.
+> - The Peer Assessment is an individual submission and must be uploaded to OMA by Wednesday 6/5. It is available in [Markdown](./material/peer-assessment-template.md) and [DOCX](./material/peer-assessment-template.docx) format.
 
 ---
 
