@@ -1,7 +1,7 @@
 # Session 7: Convolutional Neural Networks (CNNs)
 
 > [!IMPORTANT]  
-> - [Homework for this week](./material/homework.md)
+> - [Homework](./material/homework.md)
 > - **Course Feedback** *4.5.2026 - 8.5.2026*
 > - The [Peer Assessment](./material/peer-assessment-template.md):  is an individual submission and must be uploaded to OMA in Week 8.
 
