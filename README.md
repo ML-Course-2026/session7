@@ -55,9 +55,11 @@
 <summary>Links used in the Lecture</summary>
 
 - https://excalidraw.com/
-- [Visualization Tool](https://playground.tensorflow.org) 
-- https://www.cs.toronto.edu/~kriz/cifar.html
-- https://www.cs.toronto.edu/~kriz/cifar.html 
+- [Visualization Tool](https://playground.tensorflow.org)
+- Datasets
+  - https://www.cs.toronto.edu/~kriz/cifar.html
+  - https://www.cs.toronto.edu/~kriz/cifar.html 
+- [Image Color Channel Separator](https://onlinetools.com/image/separate-image-color-channels)
 - [Inspiration from the Brain: Hierarchical Vision](https://www.perkins.org/higher-order-visual-pathways-and-the-cvi-brain/)
 - [Introduction to convolutional neural networks](https://developer.ibm.com/articles/introduction-to-convolutional-neural-networks/?mhsrc=ibmsearch_a&mhq=convolutional%20neural%20networks%26quest%3B)
 - [How do convolutional neural networks work?](https://www.ibm.com/topics/convolutional-neural-networks)
