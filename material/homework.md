@@ -20,12 +20,11 @@ Please **create a separate directory** in your group’s **Google Drive folder**
   * The challenges faced during the project.
   * What you learned during the mini-project.
 
-### 3. Live Demo of Your Mini-Project During the Presentation
-
-* Start by showing the prototype designed in Phase 1.
-* Show the working demo developed for Phase 2.
-* Show the working demo developed for Phase 3.
-* Compare the outcomes of Phase 2 and Phase 3.
+* Live Demo of Your Mini-Project During the Presentation
+  * Start by showing the prototype designed in Phase 1.
+  * Show the working demo developed for Phase 2.
+  * Show the working demo developed for Phase 3.
+  * Compare the outcomes of Phase 2 and Phase 3.
 
 ### 4. Short Report – "The 4Ls" Reflection
 
