@@ -56,7 +56,7 @@
 
 - https://excalidraw.com/
 - [Visualization Tool](https://playground.tensorflow.org)
-- Datasets
+- Datasets:
   - https://www.cs.toronto.edu/~kriz/cifar.html
   - https://www.cs.toronto.edu/~kriz/cifar.html 
 - [Image Color Channel Separator](https://onlinetools.com/image/separate-image-color-channels)
