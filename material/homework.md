@@ -27,7 +27,7 @@ Please **create a separate directory** in your group’s **Google Drive folder**
 * Show the working demo developed for Phase 3.
 * Compare the outcomes of Phase 2 and Phase 3.
 
-### 4. Short Report – “The 4Ls” Reflection
+### 4. Short Report – "The 4Ls" Reflection
 
 Write a short reflective report addressing the following four points:
 
