@@ -3,7 +3,7 @@
 > [!IMPORTANT]  
 > - [Homework (Mini-Project)](./material/homework.md)
 > - **Course Feedback** *4.5.2026 - 8.5.2026*
-> - The [Peer Assessment](./material/peer-assessment-template.md):  is an individual submission and must be uploaded to OMA by Wednesday 6/5.
+> - The Peer Assessment is an individual submission and must be uploaded to OMA by Wednesday 6/5. It is available in either [Markdown](./material/peer-assessment-template.md) or [DOCX](./material/peer-assessment-template.docx) format.
 
 ---
 
@@ -27,7 +27,7 @@
 #### Part 0: Review
 
 - [Where are we now?](./material/part0.md) 
-- Group presentations: TinyML (Gr 4), Edge Impulse (Gr 2), SensiML (Gr 9)
+- Group presentations: TinyML (**Gr 4**), Edge Impulse (**Gr 2**), SensiML (**Gr 9**)
 
 ---
 
