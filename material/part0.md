@@ -1,14 +1,13 @@
 ## **Big Picture: From Data to Deep Learning**
 
-* We start with **datasets** as the foundation of all machine learning.
-* In **Supervised Learning**, we learn from labeled data:
+* We started with **datasets** as the foundation of all machine learning.
+* In **Supervised Learning**, we learned from labeled data:
   * **Classification** --> predict categories (e.g., spam / not spam)
   * **Regression** --> predict continuous values (e.g., price prediction)
 * **Classical Machine Learning**
   * Feature engineering + traditional models (e.g., decision trees)
 * **Neural Networks**
   * **Artificial Neuron --> Multi-Layer Perceptron (MLP)**
-  * Introduces learning hierarchical representations
 * **Deep Learning**
   * Scales neural networks to many layers
   * Two key directions:
@@ -24,7 +23,7 @@
     (Classification | Regression)
     ↓
     Classical Machine Learning
-    (SVM, Trees, etc.)
+    (Trees, etc.)
     ↓
     Neural Networks
     (Artificial Neuron --> MLP)
